@@ -70,57 +70,39 @@ print(f(arr, 30))
 * **Tách biệt rạch ròi Input & System Instruction:** Khu vực `# DỮ LIỆU ĐẦU VÀO` được đặt ở cuối cùng với dấu phân cách rõ ràng giúp bạn dễ dàng tái sử dụng prompt cho hàng trăm bài tập khác nhau mà không làm hỏng cấu trúc lệnh gốc.
 
 <FollowUp label="Bạn có muốn tôi chạy thử nghiệm ngay Prompt này với một ví dụ mẫu (ví dụ: Linked List và một đoạn code tìm kiếm) để kiểm tra chất lượng đầu ra không?" query="Hãy chạy thử nghiệm ngay Prompt tích hợp trên với khái niệm Linked List và một đoạn code Python tìm kiếm phần tử còn chưa tối ưu để tôi xem kết quả thực tế."/>
+
 ### Phần 4: Prompt hoàn chỉnh
-```text
+
 C (Context):
-
 Sinh viên mới học lập trình thường gặp khó khăn khi hiểu các khái niệm cấu trúc dữ liệu phức tạp (như Linked List, Binary Tree) và không biết code mình viết đã tối ưu chưa.
-
 Bạn cần xây dựng một prompt tích hợp biến AI thành một Mentor học tập: giải thích kiến thức một cách đơn giản nhất và chấm điểm bài tập code Python dựa trên tiêu chí có sẵn.
 
-
-
 R (Request):
-
 Xây dựng một cấu trúc prompt tích hợp thực hiện hai nhiệm vụ:
-
 Nhiệm vụ 1 (Feynman): Giải thích một khái niệm kỹ thuật do học viên yêu cầu sao cho một học sinh 10 tuổi cũng hiểu được.
 Nhiệm vụ 2 (Rubric): Chấm điểm đoạn code Python do học viên nộp dựa trên bảng Rubric 4 tiêu chí.
 
-
 E (Explaination) :
-
 Bảng điểm Rubric bắt buộc phải tính toán tổng điểm chính xác theo trọng số phần trăm.
 Đoạn code gợi ý sửa lỗi phải đặt trong block code Markdown phù hợp.
 AI phải đóng vai Mentor nghiêm khắc nhưng tích cực, đưa ra lời khuyên mang tính xây dựng cao.
 
-
 A (Action) :
-
 Áp dụng Feynman Technique: Sử dụng phép ẩn dụ đời sống, không dùng thuật ngữ chuyên ngành phức tạp ở bước giải thích ban đầu.
-
 Thiết lập bảng tiêu chí chấm điểm (Rubric) chi tiết:
-
 Tính đúng đắn (Correctness) - 40% điểm.
 Độ tối ưu thuật toán (Efficiency - Time/Space) - 30% điểm.
 3. Phong cách viết code (Code Style & Readability) - 20% điểm.
 4. Xử lý ngoại lệ/Bắt lỗi (Edge Cases) - 10% điểm.
 
-
 T (Tone) :
-
 Giọng văn đơn giản , dễ hiểu , giúp người đọc dễ tiếp thu kiến thức
 
-
-
 E (Extras) :
-
 Kết quả phản hồi của Mentor AI phải bao gồm:
-
 Đoạn giải thích Feynman trực quan.
 Bảng điểm chi tiết theo từng tiêu chí Rubric dạng Markdown Table.
 Nhận xét ưu/nhược điểm và đoạn code gợi ý đã được tối ưu hóa kèm comment giải thích.
 Biết cách kết hợp phương pháp Feynman để giải thích các khái niệm kỹ thuật khó một cách trực quan.
 Thành thạo kỹ thuật cấu hình Rubric đánh giá chi tiết để AI chấm điểm và sửa lỗi lập trình khách quan.
 Tạo ra một hệ thống prompt tương tác đóng vai trò Mentor học tập toàn diện.
-```
